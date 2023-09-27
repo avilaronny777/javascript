@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos</title>
+</head>
+<body>
+    <script>
+        let objetoServidor = {
+            acesso : true,
+            login : "mundojs",
+        };
+
+        let objetoServidor2 = {
+            erro : "Erro ao se conectar ao servidor",
+        };
+
+        // caso o objeto não cotenha erro, confira se o acesso é permitido
+        // se for permitido exiba "login: mundojs", senão escreva "acesso negado"
+        // caso de erro, exiba a mensagem de erro.
+
+        function conexaoLogin(respostaDoServidor){
+
+            if(respostaDoServidor == null){
+                if(acesso){
+                    console.log(`login: ${respostaDoServidor.login}`);
+                }else {
+                    console.log("acesso negado");
+                }
+            }else{
+                console.log(respostaDoServidor.erro);
+            }
+        }
+
+/* function testeTamanho (valor) {
+    if (valor > 15) {
+        return("maior")
+    }
+    else if (valor < 3) {
+        return("menor")
+    }
+    else
+        return ("na faixa")
+}
+*/
+    </script>
+</body>
+</html>
+
+

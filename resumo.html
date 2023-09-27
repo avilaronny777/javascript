@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos</title>
+</head>
+<body>
+    <script>
+        let simbolo1 = "R$";
+        let simbolo2 = "$";
+        let simbolo3 = "P$";
+
+        // escreva a função que receberá um simbolo de moeda como 
+        // parametro e retornará o some dela caso conheça aquele 
+        // simbolo, senão retornarar moeda não encontrada.
+
+
+        function moeda(simbolo){
+            switch (simbolo){
+                case "R$":
+                    console.log("Reais")
+                    break;
+                case "$":
+                    console.log("Dolar")
+                    break;
+                case "P$":
+                    console.log("Peso argentino")
+                default:
+                    console.log("Não encontrado")
+                break;
+                
+            }
+        }
+
+        function moeda2(simbolo) {
+            if (simbolo == R$){
+                console.log("Reais");
+
+            } else if (simbolo == "$") {
+                console.log("Dolar");
+            
+            }else if (simbolo == "P$") {
+                console.log("Peso Argentino");
+                
+            } else {
+                console.log("Não encontrado");
+            }
+        }
+    </script>
+</body>
+</html>
